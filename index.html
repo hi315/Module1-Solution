@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="logicForOrderLunch.js"></script>
+    <title>Order Lunch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <style>
+      .message { font-size: 1.3em; font-weight: bold; }
+    </style>
+  </head>
+
+  <body ng-app="OrderLunch">
+
+    <div ng-controller="OrderLunchController">
+
+    <h1>Enter Lunch</h1>
+
+        <div>
+            placeholder="Enter dishes (with comma separated) for lunch :"
+            <input type="text" ng-model="name">
+        </div>
+
+        <div class="form-group">
+            <button class="btn btn-default">Check If Too Much</button>
+        </div>
+
+        <div class="form-group message">
+          <!-- Your message can go here. -->
+        </div>
+
+  </div>
+
+  </body>
+
+</html>
